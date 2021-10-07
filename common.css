@@ -76,11 +76,10 @@ a:visited{color:inherit;text-decoration:none;}/*访问后的状态*/
       -webkit-border-radius: 20px;
       border-radius: 20px;
       height: fit-content;
-      padding: 2vh 5vw;
       width: fit-content;
     }
 
-    #button:focus {
+    #button:active, #button:hover {
         border: none;
     }
 }
