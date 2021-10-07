@@ -15,10 +15,10 @@ a:visited{color:inherit;text-decoration:none;}/*访问后的状态*/
     border-bottom: 1px black solid;
     padding: 0 0 12px 0;
     margin: 0;
+    font-size: x-large;
 }
 .nav > li {
     display: flex;
-    font-size: x-large;
 }
 .nav > .focus {
     font-weight: bold;
@@ -26,7 +26,6 @@ a:visited{color:inherit;text-decoration:none;}/*访问后的状态*/
 }
 .nav > span {
     display: inline;
-    font-size: x-large;
     color: gray;
 }
 .display {
@@ -42,21 +41,38 @@ a:visited{color:inherit;text-decoration:none;}/*访问后的状态*/
     right: 0;
     top: 20vh;
     margin: 0 auto;
-    font-size: 5vw;
+    font-size: 100px;
 }
 #button {
     position: absolute;
     width: fit-content;
-    padding: 0 2vw;
-    height: 5vh;
+    padding: 1vh 5vw;
+    height: fit-content;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
     background-color: skyblue;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
     color: red;
     font-size: x-large;
+}
+
+@media screen and (max-device-width: 480px){
+    .nav {
+        font-size: large;
+        padding: 0 0 0.5vh 0;
+    }
+
+    #place {
+        font-size: 40px;
+    }
+
+      #button {
+          font-size: x-large;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+      }
 }
