@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>干饭小达人</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .display {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        #place {
+            position: absolute;
+            width: fit-content;
+            height: 100px;
+            left: 0;
+            right: 0;
+            top: 30vh;
+            margin: 0 auto;
+            font-size: xxx-large;
+        }
+        #button {
+            position: absolute;
+            width: fit-content;
+            padding: 0 2vw;
+            height: 5vh;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: skyblue;
+            border-radius: 5px;
+            color: red;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+<div class="display">
+    <h1 id="place">今天要吃什么呀</h1>
+    <button type="button" onclick="choose()" id="button">随机一下!</button>
+</div>
+
+</body>
+
+<script>
+    const place = document.getElementById('place')
+    const button = document.getElementById('button')
+    const data = ['港岛记', '黄焖鸡', '辣可可', '食其家丼饭', '麦当劳', '肯德基', '福客麻辣烫',
+        '彭海军渔粉', '铁板饭', '街边摊炒粉', '老碗会', '张六羊', '乐凯撒', '食堂']
+    function choose() {
+        const len = data.length;
+        place.innerText = data[Math.floor(Math.random() * len)];
+        button.innerText = '不想吃这个，再选一遍！'
+    }
+</script>
+</html>
