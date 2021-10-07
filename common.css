@@ -78,8 +78,4 @@ a:visited{color:inherit;text-decoration:none;}/*访问后的状态*/
       height: fit-content;
       width: fit-content;
     }
-
-    #button:active, #button:hover {
-        border: none;
-    }
 }
